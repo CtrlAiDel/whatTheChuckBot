@@ -8,9 +8,9 @@ export default new Event("interactionCreate", async (interaction) => {
     if (interaction.isCommand()) {
         if (interaction.member.user.bot) return;
         const command = client.commands.get(interaction.commandName);
-        
+
         if (!command) {
-            await interaction.deferReply({ephemeral: true});
+            await interaction.deferReply({ ephemeral: true });
             interaction.followUp({
                 ephemeral: true,
                 content: "From Command: I dont know what to do with that!\nThis command may be not implemented yet!:x:"
