@@ -91,7 +91,7 @@ export const guildsConfigs = [
         // FC We Live looping
         guildId: "984305093010673684",
         welcome: {
-            channelId: 984330000893345802,
+            channelId: "984330000893345802",
             card: {
                 getTitle: () => "Welcome !!!",
                 getMsg: (params: any) => "We are glad to have you here!"

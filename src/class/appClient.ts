@@ -144,6 +144,8 @@ export class AppClient extends Client {
     }
 
     async registerCommands(publics: ApplicationCommandDataResolvable[], privates: ApplicationCommandDataResolvable[]) {
+        return;
+
         await this.application?.commands.set(publics);
         console.info(`Registered ${publics.length} global commands`);
 
