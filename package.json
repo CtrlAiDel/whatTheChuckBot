@@ -56,5 +56,8 @@
     "ts-node-dev": "latest",
     "typescript": "latest",
     "uglify-js": "latest"
+  },
+  "engines": {
+    "node": "<=18"
   }
 }

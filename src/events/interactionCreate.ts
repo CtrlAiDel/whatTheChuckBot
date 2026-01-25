@@ -5,7 +5,7 @@ import { CommandInteractionOptionResolver } from "discord.js";
 
 export default new Event("interactionCreate", async (interaction) => {
     // Chat Input Commands
-    if (interaction.isCommand()) {
+    if (interaction.isChatInputCommand()) {
         if (interaction.member.user.bot) return;
         const command = client.commands.get(interaction.commandName);
 
