@@ -84,45 +84,21 @@ export const guildsConfigs = [
         }
     },
     {
-        // Should We Train
-        guildId: "1300153496108138496",
-    },
-    {
         // FC We Live looping
         guildId: "984305093010673684",
         welcome: {
             channelId: "984330000893345802",
             card: {
-                getTitle: () => "Welcome !!!",
-                getMsg: (params: any) => "We are glad to have you here!"
+                getTitle: () => "Bienvenue !!!",
+                getMsg: (params: any) => "Très content de t'avoir parmis nous!"
             },
             getContent: (params: any) => `🤖  Greetings <@${params.member.id}> ! ⚡👾`
         },
         goodbye: {
-            channelId: "1237543989360463972",
+            channelId: "1465001127685914684",
             card: {
-                getTitle: () => "Bye bye",
-                getMsg: () => "We'll miss him / her!"
-            },
-            getContent: (params: any) => `🤖  Say goodbye to <@${params.member.id}> ! 😢👾`
-        }
-    },
-    {
-        //CtrlAiDel
-        guildId: "1200447572322549850",
-        welcome: {
-            channelId: "1200447573685706945",
-            card: {
-                getTitle: () => "Welcome !!!",
-                getMsg: (params: any) => "We are glad to have you here!"
-            },
-            getContent: (params: any) => `🤖  Greetings <@${params.member.id}> ! ⚡👾`
-        },
-        goodbye: {
-            channelId: "1237581020144992337",
-            card: {
-                getTitle: () => "Bye bye",
-                getMsg: () => "We'll miss him / her!"
+                getTitle: () => "Bon débarras!",
+                getMsg: () => "On va peut-être s'ennuyer un peu!"
             },
             getContent: (params: any) => `🤖  Say goodbye to <@${params.member.id}> ! 😢👾`
         }
